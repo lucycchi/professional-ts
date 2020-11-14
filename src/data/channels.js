@@ -7,6 +7,5 @@ export async function getChannelById(id) {
   if (typeof cached !== 'undefined') return await cached;
   cached = cachedChannelRecords[id] = apiCall(`Channels/${id}`);
 
-
   return await cached;
 }
