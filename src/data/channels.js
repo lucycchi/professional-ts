@@ -8,6 +8,5 @@ export async function getChannelById(id) {
   cached = cachedChannelRecords[id] = apiCall(`Channels/${id}`);
 
 
-
   return await cached;
 }
