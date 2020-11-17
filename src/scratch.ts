@@ -7,4 +7,6 @@ let x: {
         }
 
     }
-}
+} = undefined as any;
+
+console.log(x.user.address?.city);
